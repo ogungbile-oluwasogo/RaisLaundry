@@ -1,4 +1,5 @@
 import { Fragment } from "react";
+import { Link } from "react-router-dom";
 import style from "./Services.module.css";
 
 const Services = () => {
@@ -25,7 +26,7 @@ const Services = () => {
             are ironed and returned on a hanger or folded depending on your
             choice.
           </p>
-          <a href="order">Order Now</a>
+          <Link to="/login">Order Now</Link>
         </div>
       </div>
       <div className={style.services}>
@@ -36,7 +37,7 @@ const Services = () => {
             You wash and dry and we do the ironing and packaging of the clothes
             in either hanger or neatly folded in our folding nylon.
           </p>
-          <a href="order">Order Now</a>
+          <Link to="/login">Order Now</Link>
         </div>
         <img src="ironing-only.jpeg" alt="" />
       </div>
@@ -50,7 +51,7 @@ const Services = () => {
             we can clean it for you that same day. Drop your item off with us in
             the morning and it will be ready for collection within hours.
           </p>
-          <a href="order">Order Now</a>
+          <Link to="/login">Order Now</Link>
         </div>
       </div>
     </Fragment>
