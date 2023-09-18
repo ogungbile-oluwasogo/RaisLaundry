@@ -79,6 +79,15 @@ const OrderSuccessful = () => {
             <div>
               <h4 style={{ color: "darkgreen" }}>Palmpay</h4>
               <p>
+                Account Number: <span>8131058753</span>
+              </p>
+              <p>
+                Account Name: <span>Olaoye Ridwan</span>{" "}
+              </p>
+            </div>
+            <div>
+              <h4 style={{ color: "darkgreen" }}>VFD Microfinance Bank</h4>
+              <p>
                 Account Number: <span>1008037194</span>
               </p>
               <p>
