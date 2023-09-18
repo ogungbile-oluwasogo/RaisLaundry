@@ -1,0 +1,32 @@
+.success-wrapper {
+  width: 90%;
+  text-align: center;
+  margin: 30px auto;
+  padding: 17px;
+  border: 1px dashed #ccc;
+}
+
+.success-wrapper p {
+  margin: 15px auto;
+  color: #444;
+}
+
+.success-wrapper .account-details {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+}
+
+.success-wrapper .account-details div {
+  padding: 10px 20px;
+  border: 1px dotted #ccc;
+}
+
+@media (max-width: 680px) {
+  .success-wrapper .account-details {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: center;
+  }
+}

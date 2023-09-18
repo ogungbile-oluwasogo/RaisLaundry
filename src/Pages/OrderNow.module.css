@@ -1,0 +1,148 @@
+.order-now-wrapper {
+  width: 90%;
+  margin: 30px auto;
+  /* height: 70vh; */
+  padding: 17px;
+  border: 1px dashed #ccc;
+}
+.order-now-wrapper h1 {
+  font-size: 35px;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.order-now-wrapper .line {
+  border: 2px solid #00b3d4;
+  width: 180px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+.order-now-wrapper p {
+  text-align: center;
+  width: 60%;
+  margin: 25px auto;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+}
+
+.order-now-wrapper form {
+  width: 50%;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.order-now-wrapper form select {
+  display: block;
+  border: 1px solid #00b3d4;
+  border-radius: 10px;
+  margin: 10px auto;
+  width: 500px;
+  padding: 10px;
+  font-size: medium;
+  color: #555;
+}
+
+.order-now-wrapper form select:focus {
+  outline: #00b3d4;
+}
+
+.order-now-wrapper form input {
+  padding: 10px;
+  width: 240px;
+  font-size: medium;
+  border: 1px solid #00b3d4;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.order-now-wrapper form input:focus {
+  outline: #00b3d4;
+}
+
+.order-now-wrapper form button {
+  cursor: pointer;
+  width: 500px;
+
+  background-color: #3eb249;
+  border-radius: 10px;
+  padding: 11px;
+  color: #fff;
+  font-size: medium;
+  border: none;
+}
+
+.order-now-wrapper form button:hover {
+  background-color: #57c162;
+  transition: 0.1s ease-in-out;
+  padding: 12px;
+}
+
+.order-now-wrapper ul {
+  list-style: none;
+}
+
+.order-now-wrapper ul .product {
+  border-bottom: 1px dashed #ccc;
+  padding: 5px 0px;
+}
+
+.order-now-wrapper ul li {
+  font-size: large;
+  color: #333;
+  padding: 5px 0px;
+}
+
+.order-now-wrapper ul li span {
+  color: darkgreen;
+}
+
+.order-now-wrapper ul .product button {
+  padding: 5px 10px;
+  color: black;
+  background-color: lightsalmon;
+  border: none;
+  border-radius: 5px;
+}
+
+.order-now-wrapper a {
+  text-decoration: none;
+  background-color: #00b3d4;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media (max-width: 1100px) {
+  .order-now-wrapper form select {
+    width: 400px;
+  }
+  .order-now-wrapper form button {
+    width: 400px;
+  }
+}
+
+@media (max-width: 900px) {
+  .order-now-wrapper form {
+    width: 100%;
+  }
+  .order-now-wrapper form select {
+    width: 230px;
+  }
+  .order-now-wrapper form button {
+    width: 230px;
+  }
+}
+
+@media (max-width: 800px) {
+  .order-now-wrapper h1 {
+    font-size: 24px;
+  }
+  .order-now-wrapper p {
+    width: 95%;
+    font-size: 14px;
+  }
+}

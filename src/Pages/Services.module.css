@@ -1,0 +1,152 @@
+.services-wrapper {
+  background: url("/public/slider2.jpeg");
+  display: flex;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 60% 40%;
+  align-items: center;
+  padding-left: 50px;
+  height: 270px;
+  width: 100%;
+  margin-bottom: 45px;
+}
+
+.services-wrapper h1 {
+  font-size: 45px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.what-we-do {
+  text-align: center;
+  width: 90%;
+  margin: auto;
+  line-height: 30px;
+}
+
+.what-we-do h1 {
+  color: #333;
+  font-size: 38px;
+  margin-bottom: 25px;
+}
+
+.what-we-do div {
+  border: 2px solid #00b3d4;
+  width: 150px;
+  margin: auto;
+}
+
+.what-we-do p {
+  margin-top: 25px;
+  color: #444;
+  font-size: large;
+  margin-bottom: 45px;
+}
+
+.services {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  margin-bottom: 45px;
+  align-items: center;
+}
+
+.services img {
+  width: 50%;
+  border-radius: 6px;
+  height: 350px;
+  object-fit: cover;
+  box-shadow: 1px 8px 20px -10px #444;
+}
+
+.services div {
+  margin: 30px;
+  width: 50%;
+}
+
+.services div h2 {
+  font-size: 30px;
+  color: #333;
+  word-spacing: 2px;
+  letter-spacing: 1.5px;
+  margin-bottom: 30px;
+}
+
+.services div .borderline {
+  border: 2px solid #00b3d4;
+  width: 100px;
+  margin-left: 0px;
+}
+
+.services div p {
+  color: #444;
+  line-height: 26px;
+  word-wrap: break-word;
+  width: 35vw;
+  font-size: medium;
+  margin-bottom: 40px;
+}
+
+.services div a {
+  background-color: #00b3d4;
+  padding: 14px 30px;
+  border-radius: 30px;
+  color: #fff;
+  transition: 0.2s ease-in-out;
+  text-decoration: none;
+}
+
+/* MOBILE STYLING */
+
+@media (max-width: 800px) {
+  .services-wrapper {
+    padding-left: 30px;
+  }
+
+  .services-wrapper h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 680px) {
+  .services-wrapper {
+    padding-left: 10px;
+  }
+
+  .services-wrapper h1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .services-wrapper {
+    padding-left: 5px;
+  }
+
+  .services-wrapper h1 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 760px) {
+  .services {
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+    padding: 5px;
+    width: 90%;
+    display: block;
+    margin-bottom: 35px;
+  }
+
+  .services img {
+    width: 100%;
+  }
+  .services div {
+    width: 100%;
+    margin: 30px 0px;
+  }
+
+  .services div p {
+    width: 100%;
+  }
+}

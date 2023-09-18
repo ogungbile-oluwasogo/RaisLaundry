@@ -1,0 +1,74 @@
+.login-wrapper {
+  border: 1px solid #dddddd;
+  border-radius: 20px;
+  width: 35vw;
+  margin: 70px auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.login-wrapper h1 {
+  margin-bottom: 20px;
+  color: #555;
+  font-weight: 500;
+}
+
+.login-wrapper form {
+  width: 90%;
+  margin: auto;
+  text-align: left;
+}
+
+.login-wrapper input {
+  padding: 11px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  width: 100%;
+  color: #2c3e50;
+  outline: none;
+}
+.login-wrapper label {
+  font-size: small;
+}
+.login-wrapper span {
+  font-size: small;
+}
+
+.login-wrapper a {
+  text-decoration: none;
+  color: #00b3d4;
+  font-size: 14px;
+}
+
+.login-wrapper button {
+  display: block;
+  background-color: #00b3d4;
+  border: none;
+  padding: 12px 40px;
+  border-radius: 30px;
+  color: #fff;
+  cursor: pointer;
+  margin: 30px auto;
+}
+
+.login-wrapper button:hover {
+  border: 2px solid #98e4f2;
+}
+
+@media (max-width: 920px) {
+  .login-wrapper {
+    width: 50%;
+  }
+}
+
+@media (max-width: 620px) {
+  .login-wrapper {
+    width: 80%;
+  }
+
+  .login-wrapper form {
+    width: 90%;
+    margin: 0px;
+    text-align: left;
+  }
+}

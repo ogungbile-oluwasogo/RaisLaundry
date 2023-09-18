@@ -1,0 +1,93 @@
+.contact-wrapper {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.contact-header-wrapper {
+  background: url("/public/slider1.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 26%;
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+  height: 270px;
+  width: 100%;
+  margin-bottom: 45px;
+}
+
+.contact-wrapper .contact-header-wrapper h2 {
+  font-size: 45px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.contact-wrapper h1 {
+  margin-bottom: 20px;
+  color: #555;
+  font-weight: 500;
+  margin: 2px auto;
+}
+
+.contact-wrapper p {
+  width: 90%;
+  margin: auto;
+  margin-top: 25px;
+  color: #444;
+  font-size: large;
+  margin-bottom: 45px;
+}
+
+.contact-wrapper .contact-flex {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  padding: 0px 100px;
+}
+
+.contact-wrapper .contact-flex div {
+  width: 100%;
+  padding: 0px 20px;
+}
+.contact-wrapper .contact-flex div h2 {
+  font-size: 38px;
+  letter-spacing: 1px;
+}
+h4 {
+  margin-bottom: 10px;
+}
+span {
+  padding: 0px 4px;
+}
+
+/* MOBILE STYLING */
+@media (max-width: 1065px) {
+  .contact-wrapper .contact-flex div h2 {
+    font-size: 30px;
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 915px) {
+  .contact-wrapper .contact-flex div h2 {
+    font-size: 25px;
+    letter-spacing: 0px;
+  }
+}
+
+@media (max-width: 800px) {
+  .contact-wrapper .contact-flex {
+    display: block;
+    padding: 0px 20px;
+  }
+
+  .contact-wrapper .contact-flex div {
+    padding: 0px 0px;
+  }
+
+  .contact-wrapper .contact-header-wrapper h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+}

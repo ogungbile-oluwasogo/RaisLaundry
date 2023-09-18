@@ -1,0 +1,27 @@
+.payment-wrapper {
+  width: 90%;
+  height: 90vh;
+  text-align: center;
+  margin: 30px auto;
+  padding: 17px;
+  border: 1px dashed #ccc;
+}
+
+.payment-wrapper h2 {
+  color: #555;
+  padding: 15px;
+}
+
+.payment-wrapper p {
+  color: #444;
+}
+.payment-wrapper .account-details div {
+  padding: 10px 20px;
+  border: 1px dotted #ccc;
+  width: 60%;
+  margin: 10px auto;
+}
+
+.payment-wrapper .account-details div p {
+  padding: 10px;
+}

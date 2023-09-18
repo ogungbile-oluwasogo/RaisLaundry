@@ -1,0 +1,79 @@
+.checkout-wrapper {
+  width: 90%;
+  height: 100vh;
+  text-align: center;
+  margin: 30px auto;
+  padding: 17px;
+  border: 1px dashed #ccc;
+}
+.checkout-wrapper h1 {
+  font-size: 37px;
+  text-transform: capitalize;
+  font-weight: 500;
+  text-align: center;
+  word-spacing: 3px;
+  margin: 20px auto;
+  color: #444;
+}
+
+.checkout-wrapper .line {
+  border: 2px solid #00b3d4;
+  width: 200px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.checkout-wrapper p {
+  text-align: center;
+  width: 70%;
+  margin: 25px auto;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+}
+
+.checkout-wrapper h3 {
+  color: darkgreen;
+  font-style: oblique;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+}
+
+.checkout-wrapper form {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkout-wrapper form input {
+  padding: 12px;
+  width: 70%;
+  font-size: medium;
+  margin: 12px auto;
+  outline: none;
+  border: 1px solid #ccc;
+  border-bottom: 2px solid #00b3d4;
+}
+
+.checkout-wrapper form input:focus {
+  border-bottom: 2px solid #43c854;
+}
+
+.checkout-wrapper button {
+  cursor: pointer;
+  background-color: #00b3d4;
+  color: #fff;
+  font-size: medium;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  margin: 20px auto;
+}
+
+@media (max-width: 800px) {
+  .checkout-wrapper h1 {
+    font-size: 24px;
+  }
+  .checkout-wrapper p {
+    width: 100%;
+    font-size: 14px;
+  }
+}

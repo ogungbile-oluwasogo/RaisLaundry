@@ -1,0 +1,153 @@
+.sign-up-wrapper {
+  border: 1px solid #dddddd;
+  border-radius: 20px;
+  width: 50%;
+  margin: 70px auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.sign-up-wrapper h1 {
+  margin-bottom: 20px;
+  color: #555;
+  font-weight: 500;
+}
+.sign-up-wrapper p {
+  font-size: small;
+  color: #444;
+}
+.sign-up-wrapper .form-text-error {
+  margin-top: 20px;
+  color: red;
+  font-size: medium;
+}
+
+form {
+  margin-top: 30px;
+  width: 100%;
+}
+
+.sign-up-wrapper .form-flex {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.sign-up-wrapper .form-flex-block {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.sign-up-wrapper .form-flex-block div {
+  width: 48%;
+  text-align: left;
+}
+
+.sign-up-wrapper .form-flex div {
+  width: 48%;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.sign-up-wrapper .form-flex-block div input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  width: 100%;
+  color: #2c3e50;
+  outline: none;
+}
+
+.sign-up-wrapper .form-flex div input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  width: 100%;
+  color: #2c3e50;
+  outline: none;
+}
+
+.sign-up-wrapper .form-flex-block div .input-error {
+  background-color: rgb(239, 201, 186);
+  border: 1px solid red;
+}
+
+.sign-up-wrapper .form-flex div .input-error {
+  background-color: rgb(239, 201, 186);
+  border: 1px solid red;
+}
+
+.sign-up-wrapper .form-flex div input[type="text"]:focus {
+  border: 1px solid #00b3d4;
+  padding: 12px;
+}
+
+.form-block {
+  text-align: left;
+}
+
+.sign-up-wrapper .form-block input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  width: 100%;
+  color: #2c3e50;
+  outline: none;
+}
+
+.sign-up-wrapper .form-block .input-error {
+  background-color: rgb(239, 201, 186);
+  border: 1px solid red;
+}
+
+.sign-up-wrapper .form-block input[type="text"]:focus {
+  border: 1px solid #00b3d4;
+}
+
+.sign-up-wrapper form button {
+  background-color: #00b3d4;
+  border: none;
+  padding: 14px 30px;
+  border-radius: 30px;
+  color: #fff;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+  margin-top: 35px;
+}
+
+.sign-up-wrapper form button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+@media (max-width: 1000px) {
+  .sign-up-wrapper {
+    width: 70%;
+  }
+}
+
+@media (max-width: 800px) {
+  .sign-up-wrapper {
+    width: 92%;
+    margin: 20px auto;
+  }
+
+  .sign-up-wrapper .form-flex {
+    display: block;
+  }
+
+  .sign-up-wrapper .form-flex div {
+    width: 100%;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: small;
+  }
+}

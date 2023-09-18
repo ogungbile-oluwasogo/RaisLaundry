@@ -1,0 +1,30 @@
+.registration-success-wrapper {
+  text-align: center;
+  margin: 20px auto;
+  height: 80vh;
+}
+
+.registration-success-wrapper svg {
+  background-color: rgb(47, 192, 47);
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  padding: 20px;
+}
+
+.registration-success-wrapper .success-header {
+  color: #555;
+  text-transform: uppercase;
+  padding: 30px 0px;
+  font-size: 40px;
+}
+
+.registration-success-wrapper p {
+  font-size: large;
+}
+
+.registration-success-wrapper p a {
+  text-decoration: none;
+  color: #00b3d4;
+  font-size: large;
+}

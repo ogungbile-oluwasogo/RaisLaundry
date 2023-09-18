@@ -1,0 +1,31 @@
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #43c1dd;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer p {
+  color: #fff;
+  font-size: large;
+  margin: 0px 5px;
+}
+
+.footer i {
+  background-color: #fff;
+  color: #000;
+  padding: 12px;
+  border-radius: 100%;
+  margin: 0px 5px;
+  transition: 0.2s ease-in-out;
+}
+
+@media (max-width: 730px) {
+  .footer p {
+    font-size: small;
+    line-height: 25px;
+  }
+}

@@ -1,0 +1,102 @@
+.dashboard-wrapper {
+  margin: 20px auto;
+  width: 95%;
+  height: 80vh;
+}
+
+.dashboard-wrapper h1 {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.dashboard-wrapper h3 {
+  margin: 20px 0px;
+  color: #666;
+}
+
+.dashboard-wrapper h3 span {
+  color: #00b3d4;
+  font-size: 25px;
+}
+
+.dashboard-wrapper .namedisplay {
+  font-size: large;
+  letter-spacing: 1px;
+}
+
+.dashboard-wrapper .namedisplay i {
+  margin-right: 5px;
+}
+
+/* Main styling */
+
+.dashboard-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px auto;
+}
+
+.dashboard-main div {
+  padding: 20px;
+  margin: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  box-shadow: 1px 1px 10px #ddd;
+}
+
+.dashboard-main div i {
+  font-size: 50px;
+  color: #666;
+  padding: 13px;
+}
+
+.dashboard-main div p {
+  color: #333;
+  padding: 10px;
+}
+
+.dashboard-main div a {
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bolder;
+  background-color: #00b3d4;
+  padding: 14px 30px;
+  border-radius: 20px;
+  color: #fff;
+  transition: 0.2s ease-in-out;
+}
+
+/* MOBILE STYLING */
+
+@media (max-width: 730px) {
+  .dashboard-wrapper {
+    height: 100vh;
+  }
+
+  .dashboard-main {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .dashboard-main div {
+    width: 80%;
+    margin: 10px 0px;
+  }
+}
+
+@media (max-width: 600px) {
+  .dashboard-wrapper h1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: #555;
+  }
+
+  .dashboard-wrapper .namedisplay {
+    font-size: 16px;
+    letter-spacing: 0px;
+  }
+}
