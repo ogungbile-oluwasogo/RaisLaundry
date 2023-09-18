@@ -40,7 +40,6 @@ const UserHeader = () => {
         <div className={style.logo}>
           <h1>
             <span>Rais</span>Laundry
-            {/* <i className="fa-solid fa-droplet"></i> */}
           </h1>
         </div>
         <div className={style.menulist}>

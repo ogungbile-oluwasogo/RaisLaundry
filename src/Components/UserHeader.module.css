@@ -13,6 +13,7 @@
   display: flex;
   align-items: center;
 }
+
 .top-header div p {
   color: #fff;
   font-size: 0.9em;
@@ -165,9 +166,6 @@
   }
   .header div ul {
     display: none;
-  }
-  .header .menulist i {
-    /* display: none; */
   }
 }
 
