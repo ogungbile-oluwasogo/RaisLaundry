@@ -1,13 +1,14 @@
 .registration-success-wrapper {
   text-align: center;
   margin: 20px auto;
-  height: 80vh;
+  height: 90vh;
+  width: 90%;
 }
 
 .registration-success-wrapper svg {
   background-color: rgb(47, 192, 47);
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   border-radius: 100%;
   padding: 20px;
 }
@@ -16,7 +17,7 @@
   color: #555;
   text-transform: uppercase;
   padding: 30px 0px;
-  font-size: 40px;
+  font-size: 25px;
 }
 
 .registration-success-wrapper p {

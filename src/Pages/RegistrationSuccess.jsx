@@ -31,9 +31,9 @@ const RegistrationSuccess = () => {
               d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
             />
           </svg>
-          <h2 className={style["success-header"]}>
+          <h4 className={style["success-header"]}>
             Your registration is successful
-          </h2>
+          </h4>
           <p>
             Now that your registration is successful, you can now{" "}
             <Link to="/login">Sign In</Link>

@@ -12,7 +12,6 @@ const Login = ({ setToken }) => {
 
   const loginHandler = async (e) => {
     e.preventDefault();
-    setBtnLoading(true);
 
     try {
       const { data, error } = await supabase.auth.signInWithPassword({
@@ -20,6 +19,7 @@ const Login = ({ setToken }) => {
         password: password,
       });
       if (error) throw error;
+      setBtnLoading(true);
       setToken(data);
       navigate("/dashboard");
     } catch (error) {
@@ -39,7 +39,7 @@ const Login = ({ setToken }) => {
   return (
     <div className={style["login-wrapper"]}>
       <h1>Login</h1>
-      <p>{error}</p>
+      <p style={{ color: "red" }}>{error}</p>
       <form action="" onSubmit={loginHandler}>
         <label>Email</label>
         <input

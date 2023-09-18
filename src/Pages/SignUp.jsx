@@ -41,7 +41,7 @@ const SignUp = () => {
     hasError: passwordInputHasError,
     inputHandler: passwordInputHandler,
     inputBlurHandler: passwordInputBlurHandler,
-  } = useInput((value) => value.trim() !== "");
+  } = useInput((value) => value.length >= 6);
 
   const {
     value: enteredaddress,
@@ -134,7 +134,7 @@ const SignUp = () => {
         </p>
       )}
 
-      {error}
+      <p style={{ color: "red" }}>{error}</p>
 
       <form action="" onSubmit={submitFormHandler}>
         <div className={style["form-flex"]}>
@@ -179,6 +179,7 @@ const SignUp = () => {
               className={passwordInputClasses.toString()}
               onChange={passwordInputHandler}
               onBlur={passwordInputBlurHandler}
+              required
             />
           </div>
         </div>
@@ -198,7 +199,7 @@ const SignUp = () => {
             onChange={aboutUsInputHandler}
           />
         </div>
-        <button disabled={!formIsValid && loading}>
+        <button disabled={!formIsValid && !loading}>
           {loading ? "Submitting..." : "Sign Up"}
         </button>
       </form>
