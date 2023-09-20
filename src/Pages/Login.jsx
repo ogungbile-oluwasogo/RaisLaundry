@@ -57,7 +57,7 @@ const Login = ({ setToken }) => {
         <span>Forgot Password ? </span>
         <a href="/">Click here</a>
         <button>{btnLoading ? "Submitting..." : "Login"}</button>
-        <span>Don't have a Rias Dry Cleaners account ? </span>
+        <span>Don't have a Rais Dry Cleaners account ? </span>
 
         <Link to="/sign-up">Click here to sign up</Link>
       </form>

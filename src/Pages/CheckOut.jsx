@@ -68,7 +68,7 @@ const CheckOut = ({ token, cartItems, setCartItems, TotalPrice }) => {
           <div className={style.line}></div>
           <p>
             Please fill the form below to let us know where to pick up and
-            deliver your garments. If you already have a RiasLaundry account,
+            deliver your garments. If you already have a RaisLaundry account,
             the form will auto fill your previous details.
           </p>
           <h3>You Are Paying: ₦{totalPrice}</h3>
