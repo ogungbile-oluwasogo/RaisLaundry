@@ -19,6 +19,7 @@ import SignUp from "./Pages/SignUp";
 import { BounceLoader } from "react-spinners";
 import PaymentDetails from "./Pages/PaymentDetails";
 import ReferralPage from "./Pages/ReferralPage";
+import ForgotPassword from "./Pages/ForgotPassword";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -64,6 +65,7 @@ function App() {
         { path: "sign-up", element: <SignUp /> },
         { path: "login", element: <Login setToken={setToken} /> },
         { path: "signup-successful", element: <RegistrationSuccess /> },
+        { path: "forgot-password", element: <ForgotPassword /> },
       ],
     },
     token

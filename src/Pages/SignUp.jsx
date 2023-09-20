@@ -1,6 +1,6 @@
 import useInput from "../Hooks/use-input";
 import style from "./SignUp.module.css";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { supabase } from "../Hooks/client";
 
@@ -199,6 +199,9 @@ const SignUp = () => {
             onChange={aboutUsInputHandler}
           />
         </div>
+        <p>
+          already have an account ? <Link to="/login">Sign In</Link>
+        </p>
         <button disabled={!formIsValid && !loading}>
           {loading ? "Submitting..." : "Sign Up"}
         </button>

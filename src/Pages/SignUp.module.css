@@ -125,6 +125,11 @@ label {
   cursor: not-allowed;
 }
 
+.sign-up-wrapper form a {
+  text-decoration: none;
+  color: #00b3d4;
+}
+
 @media (max-width: 1000px) {
   .sign-up-wrapper {
     width: 70%;

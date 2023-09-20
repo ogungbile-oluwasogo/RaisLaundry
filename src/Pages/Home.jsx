@@ -39,7 +39,7 @@ const Home = () => {
   return (
     <Carousel
       autoPlay={true}
-      interval={5000}
+      interval={4000}
       infiniteLoop={true}
       transitionTime={1000}
       swipeable={true}

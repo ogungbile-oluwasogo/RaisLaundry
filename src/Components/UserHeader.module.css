@@ -88,7 +88,9 @@
   display: flex;
   align-items: center;
 }
-
+.header .logo {
+  cursor: pointer;
+}
 .header .logo span {
   color: #00b3d4;
   padding: 0px;

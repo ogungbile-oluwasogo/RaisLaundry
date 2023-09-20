@@ -1,7 +1,9 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import style from "./RootLayout.module.css";
 
 const Header = ({ showNav, showNavHandler }) => {
+  const navigate = useNavigate();
+
   return (
     <div>
       <div className={style["top-header"]}>
@@ -25,7 +27,7 @@ const Header = ({ showNav, showNavHandler }) => {
         </div>
       </div>
       <div className={style.header}>
-        <div className={style.logo}>
+        <div className={style.logo} onClick={() => navigate("/")}>
           <h1>
             <span>Rais</span>Laundry
             {/* <i className="fa-solid fa-droplet"></i> */}
@@ -102,7 +104,7 @@ const Header = ({ showNav, showNavHandler }) => {
           </ul>
           <i className="fa-brands fa-instagram"></i>
           <i className="fa-brands fa-x-twitter"></i>
-          <a href="https://wa.me/09067502626">
+          <a href="https://wa.me/08131058753">
             <i className="fa-brands fa-whatsapp"></i>
           </a>
         </div>

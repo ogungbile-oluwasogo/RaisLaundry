@@ -37,7 +37,7 @@ const UserHeader = () => {
         </div>
       </div>
       <div className={style.header}>
-        <div className={style.logo}>
+        <div className={style.logo} onClick={() => navigate("/dashboard")}>
           <h1>
             <span>Rais</span>Laundry
           </h1>
