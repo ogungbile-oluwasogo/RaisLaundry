@@ -46,6 +46,7 @@ const Home = () => {
       useKeyboardArrows={true}
       showThumbs={false}
       showStatus={false}
+      preventMovementUntilSwipeScrollTolerance={true}
     >
       {imageSlider.map((item, index) => (
         <div key={index} className={style["image-slider-wrapper"]}>
