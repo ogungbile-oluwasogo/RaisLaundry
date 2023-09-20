@@ -12,17 +12,18 @@ const Login = ({ setToken }) => {
 
   const loginHandler = async (e) => {
     e.preventDefault();
-
+    setBtnLoading(true);
     try {
       const { data, error } = await supabase.auth.signInWithPassword({
         email: email,
         password: password,
       });
       if (error) throw error;
-      setBtnLoading(true);
+
       setToken(data);
       navigate("/dashboard");
     } catch (error) {
+      setBtnLoading(false);
       setError(error.message);
     }
 

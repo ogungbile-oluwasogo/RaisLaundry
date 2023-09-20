@@ -75,9 +75,6 @@
 .header .logo {
   cursor: pointer;
 }
-.header .logo h1 {
-  /* font-size: 28px; */
-}
 
 .header .logo span {
   color: #00b3d4;

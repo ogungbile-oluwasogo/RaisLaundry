@@ -12,8 +12,7 @@ const Services = () => {
         <h1>WHAT WE DO</h1>
         <div></div>
         <p>
-          Here at Sagzy Laundries, we offer a variety of services, these
-          include:
+          Here at Rais Laundries, we offer a variety of services, these include:
         </p>
       </div>
       <div className={style.services}>

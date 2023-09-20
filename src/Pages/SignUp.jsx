@@ -97,6 +97,7 @@ const SignUp = () => {
       navigate("/signup-successful");
       console.log(data);
     } catch (error) {
+      setIsLoading(false);
       setError(error.message);
     }
 
@@ -200,7 +201,7 @@ const SignUp = () => {
           />
         </div>
         <p>
-          already have an account ? <Link to="/login">Sign In</Link>
+          Already have an account ? <Link to="/login">Sign In</Link>
         </p>
         <button disabled={!formIsValid && !loading}>
           {loading ? "Submitting..." : "Sign Up"}
