@@ -1,8 +1,10 @@
 import useInput from "../Hooks/use-input";
 import style from "./SignUp.module.css";
 import { Link, useNavigate } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { supabase } from "../Hooks/client";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const SignUp = () => {
   const navigate = useNavigate();
@@ -10,6 +12,11 @@ const SignUp = () => {
   const [loading, setIsLoading] = useState(false);
 
   const [error, setError] = useState("");
+
+  useEffect(() => {
+    document.title = "Sign Up";
+    AOS.init({ duration: 1600 });
+  }, []);
 
   const {
     value: enteredName,
@@ -125,9 +132,13 @@ const SignUp = () => {
   };
 
   return (
-    <div className={style["sign-up-wrapper"]}>
-      <h1>Sign Up</h1>
-      <p>Please fill the form below to sign up.</p>
+    <div className={style["sign-up-wrapper"]} data-aos="flip-up">
+      <h1 data-aos="fade-up" data-aos-delay="600">
+        Sign Up
+      </h1>
+      <p data-aos="fade-down" data-aos-delay="700">
+        Please fill the form below to sign up.
+      </p>
 
       {nameInputHasError && (
         <p className={style["form-text-error"]}>
@@ -137,7 +148,12 @@ const SignUp = () => {
 
       <p style={{ color: "red" }}>{error}</p>
 
-      <form action="" onSubmit={submitFormHandler}>
+      <form
+        action=""
+        onSubmit={submitFormHandler}
+        data-aos="zoom-out"
+        data-aos-delay="1100"
+      >
         <div className={style["form-flex"]}>
           <div>
             <label>Customer's Name</label>
@@ -203,7 +219,7 @@ const SignUp = () => {
         <p>
           Already have an account ? <Link to="/login">Sign In</Link>
         </p>
-        <button disabled={!formIsValid && !loading}>
+        <button disabled={!formIsValid && !loading} data-aos="fade-up">
           {loading ? "Submitting..." : "Sign Up"}
         </button>
       </form>

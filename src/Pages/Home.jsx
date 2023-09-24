@@ -3,10 +3,14 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Home = () => {
   useEffect(() => {
-    document.ttile = "Rais Laundry";
+    document.title = "Rais Laundry";
+
+    AOS.init({ duration: 2000 });
   }, []);
 
   const imageSlider = [
@@ -52,8 +56,8 @@ const Home = () => {
         <div key={index} className={style["image-slider-wrapper"]}>
           <div className={style.overlay}></div>
           <div>
-            <h1>{item.heading}</h1>
-            <p>{item.paragraph}</p>
+            <h1 data-aos="fade-up">{item.heading}</h1>
+            <p data-aos="flip-right">{item.paragraph}</p>
             <Link to="/sign-up">SIGN UP NOW</Link>
           </div>
           <img src={item.image} alt={`slide ${index}`} />

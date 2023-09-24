@@ -1,9 +1,10 @@
-import { useEffect } from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import style from "./OrderNow.module.css";
 import gsap from "gsap";
 import { useRef } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const OrderNow = ({ orderItems, cartItems, setCartItems }) => {
   const [selectedItem, setSelectedItem] = useState("");
@@ -12,7 +13,7 @@ const OrderNow = ({ orderItems, cartItems, setCartItems }) => {
 
   useEffect(() => {
     document.title = "Place Order";
-
+    AOS.init({ duration: 1300 });
     gsap.fromTo(
       elRef.current,
       { opacity: 0, y: 50 },
@@ -83,7 +84,7 @@ const OrderNow = ({ orderItems, cartItems, setCartItems }) => {
         ORDER button, then repeat action if you want to add other types of
         garments. Once you have added all items, then click the PROCEED button.
       </p>
-      <form action="">
+      <form action="" data-aos="fade-right" data-aos-mirror="true">
         <select
           name=""
           id=""
@@ -97,7 +98,9 @@ const OrderNow = ({ orderItems, cartItems, setCartItems }) => {
           ))}
         </select>
 
-        <button onClick={addToCart}>Add To Order</button>
+        <button onClick={addToCart} data-aos="slide-left">
+          Add To Order
+        </button>
       </form>
       <div>
         {cartItems.length === 0 ? (
@@ -105,14 +108,20 @@ const OrderNow = ({ orderItems, cartItems, setCartItems }) => {
         ) : (
           <ul>
             {cartItems.map((item) => (
-              <div key={item.id} className={style.product}>
+              <div key={item.id} className={style.product} data-aos="zoom-out">
                 <li>
                   {item.name} - ₦{item.price}
                 </li>
                 <li>
                   Qty: <span>{item.quantity}</span>
                 </li>
-                <button onClick={() => removeCart(item)}>Remove Item</button>
+                <button
+                  onClick={() => removeCart(item)}
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                >
+                  Remove Item
+                </button>
               </div>
             ))}
           </ul>

@@ -1,7 +1,9 @@
 import { Link, useNavigate } from "react-router-dom";
 import style from "./Login.module.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { supabase } from "../Hooks/client";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Login = ({ setToken }) => {
   const navigate = useNavigate();
@@ -9,6 +11,11 @@ const Login = ({ setToken }) => {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [btnLoading, setBtnLoading] = useState(false);
+
+  useEffect(() => {
+    document.title = "Sign Up";
+    AOS.init({ duration: 1700 });
+  }, []);
 
   const loginHandler = async (e) => {
     e.preventDefault();
@@ -38,10 +45,17 @@ const Login = ({ setToken }) => {
   };
 
   return (
-    <div className={style["login-wrapper"]}>
-      <h1>Login</h1>
+    <div className={style["login-wrapper"]} data-aos="flip-up">
+      <h1 data-aos="slide-down" data-aos-delay="600">
+        Login
+      </h1>
       <p style={{ color: "red" }}>{error}</p>
-      <form action="" onSubmit={loginHandler}>
+      <form
+        action=""
+        onSubmit={loginHandler}
+        data-aos="zoom-out"
+        data-aos-delay="1100"
+      >
         <label>Email</label>
         <input
           type="email"
