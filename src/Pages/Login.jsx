@@ -13,7 +13,7 @@ const Login = ({ setToken }) => {
   const [btnLoading, setBtnLoading] = useState(false);
 
   useEffect(() => {
-    document.title = "Sign Up";
+    document.title = "Log In";
     AOS.init({ duration: 1700 });
   }, []);
 

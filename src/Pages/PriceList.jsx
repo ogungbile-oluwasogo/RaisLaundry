@@ -76,7 +76,7 @@ const PriceList = () => {
           <p>₦ 200</p>
         </div>
         {showMore && <SeeMorePrice />}
-        <button onClick={showMoreHandler} data-aos="fade-up">
+        <button onClick={showMoreHandler} data-aos="fade-right">
           {!showMore ? "VIEW FULL LIST" : "VIEW LESS LIST"}
         </button>
       </div>

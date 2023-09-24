@@ -102,8 +102,7 @@ const Header = ({ showNav, showNavHandler }) => {
               </NavLink>
             </li>
           </ul>
-          <i className="fa-brands fa-instagram"></i>
-          <i className="fa-brands fa-x-twitter"></i>
+
           <a href="https://wa.me/08131058753">
             <i className="fa-brands fa-whatsapp"></i>
           </a>

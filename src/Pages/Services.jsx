@@ -1,12 +1,13 @@
 import { Fragment } from "react";
 import { Link } from "react-router-dom";
 import style from "./Services.module.css";
-import AOS from "aos";
 import { useEffect } from "react";
+import AOS from "aos";
 import "aos/dist/aos.css";
 
 const Services = () => {
   useEffect(() => {
+    document.title = "Our Services";
     AOS.init({ duration: 1700 });
   }, []);
 

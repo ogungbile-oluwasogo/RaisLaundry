@@ -107,7 +107,7 @@
 .header div ul li .placeorder {
   background-color: #00b3d4;
   padding: 14px 30px;
-  border-radius: 30px;
+  border-radius: 10px;
   color: #fff;
   transition: 0.2s ease-in-out;
 }
