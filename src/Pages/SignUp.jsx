@@ -18,7 +18,7 @@ const SignUp = () => {
   }, []);
 
   const showPasswordHandler = () => {
-    setShowPass(true);
+    setShowPass((show) => !show);
   };
 
   const {
@@ -194,7 +194,13 @@ const SignUp = () => {
           <div>
             <label>
               Password
-              <span onClick={showPasswordHandler}> Display Password</span>
+              <span onClick={showPasswordHandler}>
+                {showPass ? (
+                  <i className="fa-solid fa-eye"></i>
+                ) : (
+                  <i className="fa-solid fa-eye-slash"></i>
+                )}
+              </span>
             </label>
             <input
               type={showPass ? "text" : "password"}

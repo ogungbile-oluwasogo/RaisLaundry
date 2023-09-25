@@ -10,7 +10,7 @@ const Home = () => {
   useEffect(() => {
     document.title = "Rais Laundry";
 
-    AOS.init({ duration: 2200 });
+    AOS.init({ duration: 1700 });
   }, []);
 
   const imageSlider = [
