@@ -8,15 +8,18 @@ import "aos/dist/aos.css";
 
 const SignUp = () => {
   const navigate = useNavigate();
-
   const [loading, setIsLoading] = useState(false);
-
   const [error, setError] = useState("");
+  const [showPass, setShowPass] = useState(false);
 
   useEffect(() => {
     document.title = "Sign Up";
     AOS.init({ duration: 1600 });
   }, []);
+
+  const showPasswordHandler = () => {
+    setShowPass(true);
+  };
 
   const {
     value: enteredName,
@@ -189,9 +192,12 @@ const SignUp = () => {
             />
           </div>
           <div>
-            <label>Password</label>
+            <label>
+              Password
+              <span onClick={showPasswordHandler}> Display Password</span>
+            </label>
             <input
-              type="password"
+              type={showPass ? "text" : "password"}
               placeholder="Enter Password"
               className={passwordInputClasses.toString()}
               onChange={passwordInputHandler}

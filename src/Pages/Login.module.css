@@ -29,7 +29,14 @@
 }
 .login-wrapper label {
   font-size: small;
+  display: flex;
+  justify-content: space-between;
 }
+.login-wrapper label span {
+  color: #00b3d4;
+  cursor: pointer;
+}
+
 .login-wrapper span {
   font-size: small;
 }

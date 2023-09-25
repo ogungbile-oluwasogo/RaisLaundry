@@ -10,7 +10,7 @@ const Home = () => {
   useEffect(() => {
     document.title = "Rais Laundry";
 
-    AOS.init({ duration: 2000 });
+    AOS.init({ duration: 2200 });
   }, []);
 
   const imageSlider = [
@@ -57,7 +57,7 @@ const Home = () => {
           <div className={style.overlay}></div>
           <div>
             <h1 data-aos="fade-up">{item.heading}</h1>
-            <p data-aos="flip-right">{item.paragraph}</p>
+            <p data-aos="fade-right">{item.paragraph}</p>
             <Link to="/sign-up">SIGN UP NOW</Link>
           </div>
           <img src={item.image} alt={`slide ${index}`} />

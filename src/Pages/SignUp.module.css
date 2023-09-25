@@ -49,9 +49,15 @@ form {
   text-align: left;
 }
 
-label {
-  display: block;
+.sign-up-wrapper form label {
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 5px;
+}
+
+.sign-up-wrapper form label span {
+  color: #00b3d4;
+  cursor: pointer;
 }
 
 .sign-up-wrapper .form-flex-block div input {

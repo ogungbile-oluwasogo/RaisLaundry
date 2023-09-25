@@ -11,11 +11,16 @@ const Login = ({ setToken }) => {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [btnLoading, setBtnLoading] = useState(false);
+  const [showPass, setShowPass] = useState(false);
 
   useEffect(() => {
     document.title = "Log In";
     AOS.init({ duration: 1700 });
   }, []);
+
+  const showPasswordHandler = () => {
+    setShowPass(true);
+  };
 
   const loginHandler = async (e) => {
     e.preventDefault();
@@ -62,14 +67,18 @@ const Login = ({ setToken }) => {
           placeholder="Enter your email"
           onChange={(e) => setEmail(e.target.value)}
         />
-        <label>Password</label>
+        <label>
+          Password
+          <span onClick={showPasswordHandler}> Display Password</span>
+        </label>
         <input
-          type="password"
+          type={showPass ? "text" : "password"}
           placeholder="Enter Password"
           onChange={(e) => setPassword(e.target.value)}
         />
+
         <span>Forgot Password ? </span>
-        <a href="/">Click here</a>
+        <Link to="/forgot-password">Click here</Link>
         <button>{btnLoading ? "Submitting..." : "Login"}</button>
         <span>Don't have a Rais Dry Cleaners account ? </span>
 

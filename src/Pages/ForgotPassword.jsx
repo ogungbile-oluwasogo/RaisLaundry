@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { supabase } from "../Hooks/client";
+import style from "./ForgotPassword.module.css";
 
 const ForgotPassword = () => {
   const [email, setEmail] = useState("");
@@ -28,13 +29,16 @@ const ForgotPassword = () => {
   };
 
   return (
-    <div>
-      <p>{message}</p>
+    <div className={style["forgotpass-wrapper"]}>
+      <p>
+        Input your registered email address in the form below to receive a link
+        to reset your password
+      </p>
+      <p style={{ color: "orangered" }}>{message}</p>
       <form onSubmit={handleForgotPassword}>
-        <label>
-          Email:
-          <input type="email" onChange={emailhandler} />
-        </label>
+        <label>Email:</label>
+        <br />
+        <input type="email" onChange={emailhandler} />
         <button>Submit</button>
       </form>
     </div>
