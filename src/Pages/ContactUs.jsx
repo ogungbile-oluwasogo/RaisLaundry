@@ -46,7 +46,7 @@ const ContactUs = () => {
               <i className="fa-solid fa-envelope"></i>
             </span>
           </h4>
-          <p data-aos="zoom-in">olaoyeoyebamiji@gmail.com</p>
+          <p data-aos="zoom-in">contact@raislaundry.com.ng</p>
         </div>
         <div>
           <ContactUsForm />
